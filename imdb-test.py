@@ -3,7 +3,7 @@ import requests
 import sys
 import re
 from StringIO import StringIO
-
+import subtitles
 try:
     import cPickle as pickle
 except:
@@ -56,6 +56,6 @@ for each in imdb:
     url = "http://www.opensubtitles.org/en/search/imdbid-"+movie_id+"/sublanguageid-eng/moviename-"+movie_name
     subtitle_url = download_subtitle(url)
     each['subtitle_url']=subtitle_url
-
+    subtitles.download(subtitle_url)
 
 print(imdb)
