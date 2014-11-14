@@ -1,0 +1,2 @@
+https://pypi.python.org/pypi/guessit
+https://github.com/agonzalezro/python-opensubtitles
